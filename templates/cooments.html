@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'content' %}
+
+<div class="content">
+    <ul>
+      {% for i in comm %}
+      <li>
+        <div class="right-content">
+          <h4>{{i.name}}<span>{{i.date}}</span></h4>
+          <p>{{i.message}}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+{% endblock 'content' %}
